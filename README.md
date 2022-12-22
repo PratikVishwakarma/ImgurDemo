@@ -26,3 +26,8 @@ Download and install the demo apk. [Download Apk](https://github.com/PratikVishw
 
 ### Resource
 - Used https://flaticon.com/ for icons
+
+### Images
+![List View] (https://github.com/PratikVishwakarma/ImgurDemo/blob/main/List_view.png)
+![Grid View] (https://github.com/PratikVishwakarma/ImgurDemo/blob/main/grid_view.png)
+![Grid-Land View] (https://github.com/PratikVishwakarma/ImgurDemo/blob/main/Grid_land.png)
