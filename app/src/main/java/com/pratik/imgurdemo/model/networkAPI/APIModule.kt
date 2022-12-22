@@ -37,7 +37,7 @@ object APIModule {
             .addInterceptor(object : Interceptor{
                 override fun intercept(chain: Interceptor.Chain): Response {
                     val newRequest: Request = chain.request().newBuilder()
-                        .addHeader("Authorization", "Client-ID f82b92bb9b9084e")
+                        .addHeader("Authorization", "Client-ID ${NetworkConstant.CLIENT_ID}")
                         .build()
                     return chain.proceed(newRequest)
                 }
