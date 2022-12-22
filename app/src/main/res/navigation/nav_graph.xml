@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/imageListFragment"
+        android:name="com.pratik.imgurdemo.ui.view.ImageListFragment"
+        android:label="fragment_image_list"
+        tools:layout="@layout/fragment_image_list" >
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.pratik.imgurdemo.ui.view.SplashFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_imageListFragment"
+            app:destination="@id/imageListFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+    </fragment>
+
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImgurDemo</string>
+    <string name="search_image">Search image</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="internet_not_available">Internet not available</string>
+</resources>
