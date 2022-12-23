@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ResponseDTO(
     @SerializedName("data")
-    val images: List<ImageDTO> = ArrayList(),
+    var images: List<ImageDTO> = ArrayList(),
 
     @SerializedName("success")
     val success: Boolean = true,

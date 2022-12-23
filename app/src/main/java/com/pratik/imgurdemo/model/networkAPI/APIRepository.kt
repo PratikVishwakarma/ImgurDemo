@@ -8,4 +8,5 @@ class APIRepository @Inject constructor(private val apiService: APIService) {
     *  params: query
     * */
     suspend fun getImageData(query: String) = apiService.getImageData(query)
+    
 }

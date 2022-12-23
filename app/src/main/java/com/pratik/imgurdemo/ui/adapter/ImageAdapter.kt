@@ -29,7 +29,7 @@ class ImageAdapter:
         const val GRID_MODE = 1
     }
     lateinit var listener: ImageListener
-    private var mode = Companion.LIST_MODE
+    private var mode = LIST_MODE
 
     fun setMode(newMode: Int = LIST_MODE){
         this.mode = newMode
