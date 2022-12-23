@@ -15,11 +15,17 @@ An demo application which fetch the top week images form the imgur according to 
 ### Application Design 
 - Application is desiged with clean architecture with kotlin
 
+### Testing  
+- Unit test cases are written to check API call but falling
+- UI Automation Test are written with espresso
+
 ### Libraries used 
 - Retrofit: for network calling
 - Glide: for Image processing
 - Hilt: Dependency Injection
 - Other Jetpack components like Jetpack Navigation, LiveData.
+- Lottie: Loading animation
+- Espresso: Writing UI Automation test
 
 ### Demo APK
 Download and install the demo apk. [Download Apk](https://github.com/PratikVishwakarma/ImgurDemo/blob/main/app.apk) 
