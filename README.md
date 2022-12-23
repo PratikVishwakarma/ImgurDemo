@@ -4,7 +4,7 @@ An demo application which fetch the top week images form the imgur according to 
 ### Run Instruction
 - Clone the master branch or download it 
 - Build the project
-- goto NetworkConstant at app\src\main\java\com\pratik\imgurdemo\model\networkAPI\ and replace the text "paste here your Client-Id" with your Client-Id
+- goto NetworkConstant.kt file -- at app\src\main\java\com\pratik\imgurdemo\model\networkAPI\ and replace the text "paste here your Client-Id" with your Client-Id
 - Run the project.
 
 ### List of Assumptions made 
@@ -26,3 +26,8 @@ Download and install the demo apk. [Download Apk](https://github.com/PratikVishw
 
 ### Resource
 - Used https://flaticon.com/ for icons
+
+### Images
+![List View] (https://github.com/PratikVishwakarma/ImgurDemo/blob/main/List_view.png?raw=true)
+![Grid View] (https://github.com/PratikVishwakarma/ImgurDemo/blob/main/grid_view.png?raw=true)
+![Grid-Land View] (https://github.com/PratikVishwakarma/ImgurDemo/blob/main/Grid_land.png?raw=true)
