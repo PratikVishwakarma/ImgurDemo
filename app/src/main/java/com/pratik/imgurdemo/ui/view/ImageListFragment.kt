@@ -31,7 +31,6 @@ class ImageListFragment : Fragment() {
     private val mAdapter by lazy { ImageAdapter() }
 
     private lateinit var binding: FragmentImageListBinding
-    private lateinit var builder: AlertDialog.Builder
     private lateinit var mBuilder: MaterialAlertDialogBuilder
     private val imageList: ArrayList<ImageDTO> = ArrayList()
 
@@ -44,7 +43,6 @@ class ImageListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        builder = AlertDialog.Builder(requireContext())
         mBuilder = MaterialAlertDialogBuilder(requireContext(), R.style.CutShapeTheme)
 
         binding.ivSearch.setOnClickListener {
@@ -113,45 +111,10 @@ class ImageListFragment : Fragment() {
         setupImageData()
     }
 
-
     /*
     * function to create and show the dialog to make a search
     * */
     private fun openSearchDialog() {
-//        builder.setTitle(getString(R.string.search_image))
-//
-//        val input = EditText(requireContext())
-//        input.inputType = InputType.TYPE_CLASS_TEXT
-//        input.setText(imageServerViewModel.searchText.value)
-//        input.doOnTextChanged { text, _, _, _ ->
-//            imageServerViewModel.setSearchText(text.toString())
-//        }
-//        builder.setView(input)
-//
-//        builder.setPositiveButton(
-//            getString(R.string.search)
-//        ) { _, _ ->
-//            val text = input.text.toString()
-//            if (text.isNotEmpty()) {
-//                imageServerViewModel.setSearchText(text)
-//                if (!requireContext().isNetworkAvailable())
-//                    requireContext().showToast(getString(R.string.internet_not_available))
-//                imageServerViewModel.getTopImageOfWeek()
-//            } else
-//                requireActivity().showToast("Fill the value...")
-//        }
-//        builder.setNegativeButton(
-//            getString(R.string.cancel)
-//        ) { dialog, _ -> dialog.cancel() }
-//
-//        builder.show()
-        openSearchDialogMaterial()
-    }
-
-    /*
-    * function to create and show the dialog to make a search
-    * */
-    private fun openSearchDialogMaterial() {
         mBuilder.setTitle(getString(R.string.search_image))
         val input = EditText(requireContext())
         input.id = R.id.my_dialog_edit_text
